@@ -12,14 +12,5 @@ router
   .put(controller.update)
   .delete(controller.delete);
 
-router.route("/removeInfo/:id").post(controller.deleteInfo);
-
-router.route("/login").post(controller.findByUsernameAndPassword);
-
-router
-  .route("/info/:id")
-  .post(controller.addInfo)
-  .delete(controller.deleteInfo);
-
 // We export the entire document
 module.exports = router;

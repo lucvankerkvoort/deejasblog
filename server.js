@@ -3,7 +3,7 @@ require("dotenv").config();
 var express = require("express");
 var app = express();
 var mongoose = require("mongoose");
-
+const cors = require("cors");
 // This is the Port we are listening at
 var PORT = process.env.PORT || 3001;
 
@@ -13,6 +13,7 @@ app.use(express.static("public"));
 // The parser is used to parse front-end data to a JSON format
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -30,6 +31,6 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/local";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // We listen for the Port on the localhost
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("Server listening at localhost:" + PORT);
 });

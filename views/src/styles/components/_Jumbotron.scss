@@ -1,0 +1,23 @@
+.jumbotron {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  font-family: "Nunito";
+  align-items: center;
+  text-shadow: 2px 2px white;
+  background-image: linear-gradient(
+    to right bottom,
+    #7d2889,
+    #5c54af,
+    #2274c4,
+    #008eca,
+    #00a5c6,
+    #169dbc,
+    #2094b3,
+    #278ca9,
+    #3f658a,
+    #44415f,
+    #352232,
+    #1c060c
+  );
+}

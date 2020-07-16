@@ -6,35 +6,14 @@ const Schema = mongoose.Schema;
 
 // The instance of the schema used for Travellers
 const UserSchema = new Schema({
-  firstname: {
+  title: {
     type: String,
     required: true,
   },
-  lastname: {
+  text: {
     type: String,
     required: true,
   },
-  username: {
-    type: String,
-    required: true,
-  },
-  password: {
-    type: String,
-    required: true,
-    validate: [
-      function (input) {
-        return input.length >= 8 && input.length <= 20;
-      },
-      "Password is not long enough",
-    ],
-  },
-  city: {
-    type: String,
-    trim: true,
-  },
-  booking: { type: Array },
-  availability: { type: Array },
-  routes: { type: Array },
 });
 console.log(UserSchema);
 // We use MongoDB's build in module to create a container so we can export the schema
