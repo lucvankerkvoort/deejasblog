@@ -4,7 +4,7 @@ import { HashRouter, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Blog from "./pages/Blog";
+import Travel from "./pages/Travel";
 
 class App extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class App extends React.Component {
           <Navbar />
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/shop" component={Blog} />
+          <Route path="/travel" component={Travel} />
         </HashRouter>
       </div>
     );

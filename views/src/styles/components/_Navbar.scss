@@ -22,5 +22,84 @@
     display: flex;
     width: 40%;
     justify-content: space-evenly;
+    p {
+      padding: 10px;
+      color: white;
+      box-shadow: 7px 7px black;
+      border-radius: 3px;
+    }
+
+    p:hover {
+      transition: 1500ms;
+      transform: rotateY(360deg);
+    }
+
+    .navbar-home {
+      background-image: linear-gradient(
+        to right bottom,
+        #283d89,
+        #274a97,
+        #2557a4,
+        #2364b1,
+        #2171be,
+        #1382cb,
+        #0292d8,
+        #00a3e3,
+        #00baed,
+        #00d1f2,
+        #26e6f3,
+        #5ffbf1
+      );
+    }
+    .navbar-fandd {
+      background-image: linear-gradient(
+        to right bottom,
+        #0f6e6e,
+        #13817e,
+        #19948e,
+        #22a89e,
+        #2cbcad
+      );
+    }
+    .navbar-lifestyle {
+      background-image: linear-gradient(
+        to left top,
+        #ed4df0,
+        #ed2bb6,
+        #df1583,
+        #c61758,
+        #a72236
+      );
+    }
+    .navbar-travel {
+      background-image: linear-gradient(
+        to right bottom,
+        #185e0d,
+        #257d1d,
+        #319e2e,
+        #3cc040,
+        #45e454
+      );
+    }
+    .navbar-fashion {
+      background-image: linear-gradient(
+        to right bottom,
+        #6b1c6c,
+        #8a288a,
+        #a934a9,
+        #cb41c9,
+        #ed4eea
+      );
+    }
+    .navbar-about {
+      background-image: linear-gradient(
+        to left top,
+        #ff5f83,
+        #e14b6a,
+        #c43752,
+        #a7233c,
+        #8a0b27
+      );
+    }
   }
 }
